@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* display:flex */
+
+body,
+.container,
+.layer,
+.price-date,
+.price,
+.date,
+.textcontainer,
+.creationcontainer {
+  display: flex;
+}
+
+/* align-items */
+
+body,
+.layer,
+.price,
+.date,
+.creationcontainer {
+  align-items: center;
+}
+
+/* justify-content: center */
+
+body,
+.layer {
+  justify-content: center;
+}
+
+/* flex-direction: column; */
+
+body,
+.container,
+.textcontainer {
+  flex-direction: column;
+}
+body {
+  background: hsl(217, 54%, 11%);
+  color: hsl(215, 51%, 70%);
+  height: 100vh;
+  font-size: 18px;
+  font-family: "Outfit", sans-serif;
+}
+.container {
+  width: 350px;
+  height: 600px;
+  margin: auto;
+  background: hsl(216, 50%, 16%);
+  padding: 8%;
+  border-radius: 1.5em;
+  justify-content: start;
+}
+.container h1 {
+  font-weight: 400;
+}
+.container p {
+  font-weight: 300;
+  line-height: 1.5em;
+}
+.imagecontainer {
+  width: 100%;
+  height: 54%;
+  background-image: url(./images/image-equilibrium.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 1em;
+}
+.layer {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background: hsl(178, 100%, 50%);
+  border-radius: inherit;
+}
+.layer:hover,
+.layer:active {
+  opacity: 0.4;
+  cursor: pointer;
+}
+.title,
+.name {
+  color: white;
+}
+.title {
+  font-size: 1.4em;
+}
+.title:hover,
+.title:active {
+  color: hsl(178, 100%, 50%);
+}
+.textcontainer,
+.creationcontainer {
+  gap: 1em;
+}
+.textcontainer {
+  padding-top: 1.5em;
+  padding-bottom: 1em;
+  border-bottom: 0.1em solid hsl(215, 32%, 27%);
+}
+.price-date {
+  display: flex;
+  justify-content: space-between;
+}
+.price {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  color: hsl(178, 100%, 50%);
+}
+.date {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+.creationcontainer {
+  display: flex;
+  align-items: center;
+  margin-top: 1em;
+}
+
+.creationcontainer img {
+  width: 10%;
+  border: solid 0.1em white;
+  border-radius: 50%;
+}
+.name:hover,
+.name:active {
+  color: hsl(178, 100%, 50%);
+}
