@@ -80,9 +80,16 @@ body {
   border-radius: inherit;
 }
 .layer:hover,
+.layer:active,
+.name:hover,
+.name:active,
+.title:hover,
+.title:active {
+  cursor: pointer;
+}
+.layer:hover,
 .layer:active {
   opacity: 0.4;
-  cursor: pointer;
 }
 .title,
 .name {
